@@ -1,0 +1,1862 @@
+/*Barra horizontal*/
+/*Crear cuenta*/
+/*Iniciar sesión*/
+/*Contacto*/
+/*Nuestra Tienda*/
+/*Carrito*/
+/*Facturas*/
+/*PARTE FOOTER*/
+/*FOOTER.CORTO*/
+/*Inicio*/
+/*Productos*/
+/*BOTON BUSCA*/
+/*Stock*/
+/*Estadísticas*/
+/*Pedidos*/
+/*XBOX*/
+/*PC*/
+/*BASES DE DATOS*/
+/*Medias*/
+
+img.imagenes_pequeñitas{
+    width: 80px;
+    height: 80px;
+}
+
+#color-principal{
+    background-color: #f34d0b;
+    color: white;
+}
+
+#color-secundario{
+    background-color: white;
+    color: #f34d0b;
+}
+
+/* Barra horizontal 
+-----------------------*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#chk_menu,
+#chk_dropdown {
+    display: none; 
+}   
+
+.fa {
+    display: none !important; 
+}
+
+header.headerColor nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+header.headerColor nav.textoColor{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2c3840;
+}
+
+header.headerColor nav.textoColor ul.informacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+header.headerColor nav.textoColor ul.informacion li{
+    padding: 0.8em;
+    color: white;
+}
+
+header.headerColor nav.textoColor ul.redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header.headerColor nav.textoColor ul.redes li{
+    padding-right: 0.8em;
+}
+
+header.headerColor nav.textoColor ul.redes li a img{
+    width: 110%;
+}
+
+header.headerColor nav.textoColor ul.informacion,ul.redes{
+    list-style: none;
+}
+
+header.headerColor nav.textoColor ul.informacion li{
+    min-width: 95px;
+}
+/*-----------------------------------------------------------*/
+
+header.headerColor nav.menu-contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #2c3840;
+    width:100%
+}
+
+header.headerColor nav.menu-contenedor h3.textoColor{
+    align-self: flex-start;
+    color: white;
+    padding-left: 0.8em;
+    flex-shrink: 1;
+}
+
+
+header.headerColor nav.menu-contenedor ul.menu-main{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    flex-shrink: 1;
+    list-style: none;
+    align-items: center;
+}
+
+
+header.headerColor nav.menu-contenedor ul.menu-main li {
+    padding: 1em 0.8em 1em;
+    margin: 0;
+    width: 100%;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li.dropdown li{
+    padding: 0;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li.dropdown li a{
+    padding: 1rem 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li.textoColor{
+    color: white;
+}
+
+
+header.headerColor nav.menu-contenedor ul.menu-main li a, 
+header.headerColor nav.menu-contenedor ul.menu-main li{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li ul{
+    display: none;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li.dropdown{
+    position: relative;
+
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li:hover ul{
+    display: block;
+    position: absolute;
+    background-color: #f44336;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li:hover,
+header.headerColor nav.menu-contenedor ul.menu-main li a:hover{
+    list-style: none;
+    background-color: #9c27b0;
+    color: black;
+    cursor: pointer;
+    
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li ul{
+    margin-top: 1em;
+    margin-left: -0.8em;
+    width: 100%;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li ul li{
+    border-top: solid 2px white;
+    width: 100%;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li ul li a{
+    display: block;
+    color: white;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li ul li a:hover{
+    display: block;
+    color: white;
+    background-color: #e91e63;
+    width: 100%;
+}
+
+ul.menu-main li:hover li{
+    display: block;
+}
+
+header.headerColor nav.menu-contenedor ul.menu-main li.dropdown ul.dropdown-content li:hover{
+    background-color: #e91e63;
+}
+
+nav.menu-contenedor li a,
+nav.menu-contenedor li label a{
+    width: 100% !important;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*Crear Cuenta*/
+label.labels{
+    margin-top: 10px;
+}
+
+body.acceso *{
+    text-align: center;
+}
+
+section header img{
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+body main section header h1{
+    font-weight: normal;
+}
+
+input.crear_cuenta{
+    padding: 15px 75px;
+    background-color: #f34d0b;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input[type=email]{
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: left;
+  }
+  
+  input[type=password]{
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: left;
+  }
+
+  a.iniciar_sesion{
+    background-color: grey;
+    border-radius: 25%;
+    color:  white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px; 
+}
+
+body.acceso section{
+    min-height: 91.5vh;
+}
+
+/*Iniciar Sesion*/
+body.acceso *{
+    text-align: center;
+}
+
+section header img{
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+body main section header h1{
+    font-weight: normal;
+}
+
+body main section form input.iniciar_sesion{
+    padding: 15px 75px;
+    background-color: #f34d0b;
+    color: white;
+}
+
+a.twitter{
+    margin: 5px;
+    background-color: aqua;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+a.facebook{
+    margin: 5px;
+    background-color: blue;
+    color:  white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+a.or{
+    margin: 5px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    color:  white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a.twitter img{
+    padding-right: 10px;
+    padding-top: 7px;
+    height: 25px;
+    width: 25px;
+}
+
+a.facebook img{
+    padding-right: 10px;
+    padding-top: 7px;
+    height: 25px;
+    width: 25px;
+}
+
+input.sign_up{
+    margin: 5px;
+    background-color: grey;
+    color:  white;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+a.crearcuenta{
+    background-color: grey;
+    border-radius: 25%;
+    color:  white;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+input[type=email]{
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: left;
+}
+
+input[type=password]{
+  border: none;
+  border-bottom: 2px solid black;
+  text-align: left;
+}
+
+label{
+    text-align: right;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+footer p span{
+    text-align: center;
+}
+
+
+/*Contacto*/
+section.contacto{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 35% 35% 30% ;
+    width: 90%;
+    margin: auto;
+}
+
+section.contacto article img{
+    width: 350px;
+    height: 200px;
+}
+
+section.contacto article header h1{
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+section.contacto article h2{
+    text-decoration: underline;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+section.contacto article p{
+    margin: 20px
+}
+
+section.contacto article form div label{
+    margin-bottom: 20px;
+}
+
+form.contacto{
+    border: 2px solid black;
+}
+
+form.contacto *{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+section.contacto article{
+    margin-bottom: 50px;
+}
+
+section.contacto article img{
+    margin-left: 10px;
+}
+
+form.formulario_contacto{
+    border: 3px solid grey;
+    margin: 10px;
+    padding: 10px;
+}
+
+form.formulario_contacto div.texto{
+    margin-bottom: 15px;
+}
+
+input#cognom{
+    width: 95%;
+}
+
+input#nom{
+    width: 95%;
+}
+
+div.mensajeformulario{
+    text-align: center;
+}
+
+/*Nuestra tienda*/
+section.nuestra_tienda{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 50% 50% ;
+    width: 90%;
+    margin: auto;
+}
+
+section.nuestra_tienda article header h1{
+    padding-bottom: 20px;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+section.nuestra_tienda article p{
+    margin: 15px;
+}
+
+section.nuestra_tienda article h1{
+    text-align: center;
+}
+
+section.nuestra_tienda article img{
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+textarea#mensaje{
+    resize: vertical;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/*Carrito*/
+
+section.seccion_compras{
+    text-align: center;
+}
+
+section.seccion_compras div{
+    width: 35%;
+    margin: auto;
+    border: 3px solid grey;
+    margin-bottom: 30px;
+}
+
+header h1.carrito{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h1.titulo{
+    text-decoration: underline;
+}
+
+section.carrito{
+    margin: auto;
+    width: 90%;
+}
+
+section.carrito{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 90%;
+    margin: auto;
+    width: 90%;
+}
+
+img.producto_largo{
+    width: 140px;
+    height: 240px;
+}
+
+img.producto_achatado{
+    width: 220px;
+    height: 120px;
+}
+
+img.estrellas{
+    margin-left: 5px;
+    width: 120px;
+    height: 35px;
+}
+
+img.puntos{
+    margin-right: 15px;
+}
+
+div.contenido_producto p{ 
+    margin-right: 15px;
+}
+
+div.contenido_producto a{
+    margin-right: 15px;
+}
+
+a.comprarproductos{
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    padding: 0.5em;
+    font-size: 10px;
+}
+
+a.comprarproductos:hover{
+    text-decoration: none;
+    background-color: grey;
+    color: blue;
+    padding: 1em;
+}
+
+
+/*Facturas*/
+section.seccion_facturas{
+    margin-bottom: 30px;
+}
+
+div.separacion{
+    text-align: center;
+    margin-top: 250px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 50% 50%;
+}
+
+a.facturasaPDF{
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin: auto;
+    display: block;
+    width: max-content;
+}
+
+a.facturasaPDF span{
+    color: red;
+    font-weight: bolder;
+}
+a.facturasaXML span{
+    color: #f34d0b;
+    font-weight: bolder;
+}
+
+a.facturasaXML{
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin: auto;
+    display: block;
+    width: max-content;
+}
+
+header h1.facturas{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h1.titulo2{
+    text-decoration: underline;
+}
+
+section.facturas{
+    display: grid;
+    grid-auto-flow: row;
+    grid-column-gap: 40px;
+    grid-template-columns: 90%;
+    margin: auto;
+    width: 90%;
+}
+
+section.facturas table tbody tr{
+    width: 100%;
+}
+
+div p{ 
+    margin-left: 5px;
+}
+
+div a{
+    margin-left: 5px;
+}
+
+img.compartir{
+    margin-top: 13px;
+    padding-left: 10px;
+    width: 20px;
+}
+
+img.factura_producto_horizontal{
+    height: 200px;
+}
+
+img.factura_producto_vertical{
+    height: 125px;
+}
+
+img.impresora{
+    height: 40px;
+}
+
+p a.compartir_factura{
+    background-color: #f34d0b;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    width: max-content;
+}
+
+a.compartir:hover{
+    text-decoration: none;
+    background-color: #f34d0b;
+    color: black;
+    padding: 1em;
+}
+
+.factura-footer{
+    min-height: 77.8vh;
+}
+
+/*PARTE FOOTER*/
+footer{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    bottom: 0px;
+    margin: 0, auto;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+footer p span{
+    text-align: center;
+}
+
+footer{
+    font-size: 10px;
+    color: white;
+    background-color: lightgrey;
+}
+
+div.contenido_producto{
+    display: flex;
+}
+
+/* FOOTER.CORTO */
+#footerCorto{
+    min-height: 80vh;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
+
+/* Inicio */
+article.imagen-zona{
+    background: url(../img/arena-la-nueva-sala-videojuegos-en-cdmx-en-salas-cine-05.jpg) no-repeat fixed;
+    background-size:cover;
+    background-position: center;
+    height: 25rem;
+}
+
+section.pagina-principal div.sombra{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.501);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.pagina-principal p{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-left: 11rem;
+    margin-right: 11rem;
+}
+
+div.sombra ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.sombra li{
+    width: 8em;
+    text-align: center;
+    margin: 10%;
+}
+
+div.sombra li#color-principal{
+    margin: auto;
+    margin-top: 30px;
+}
+
+div.sombra li#color-secundario{
+    margin:auto;
+    margin-top: 30px;
+}
+
+div.sombra li{
+    list-style: none;
+    padding: 1em;
+}
+
+li#color-principal{
+    border: solid 1px white;
+}
+
+li#color-secundario{
+    border: solid 1px #f34d0b;
+}
+
+div.sombra a{
+    width: 100%;
+}
+
+#color-principal a{
+    text-decoration: none;
+    color: white;
+}
+
+#color-secundario a{
+    text-decoration: none;
+    color:#f34d0b;
+}
+
+
+article.opciones ul{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 30% 30% 30%;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.opciones li{
+    list-style: none;
+}
+
+article.opciones p a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #f34d0b;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Productos: */
+
+section.consolasXBOX{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 30% 30% 30%;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.cabecera-PC{
+    margin: 2em;
+    margin-bottom: 0;
+}
+
+header.cabecera-PC h2{
+    font-size: 2em;
+}
+
+header.cabecera-PC p{
+    font-size: 1em;
+}
+
+h3.nombrejuego{
+    text-align: center;
+}
+
+h3.nombreconsolas{
+    text-align: center;
+}
+
+/*BOTON BUSCA
+-----------------------*/
+header.cabecera-PC ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+header.cabecera-PC li{
+    list-style: none;
+}
+
+header.cabecera-PC a{
+    background-color: #f34d0b;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    border: solid black 2px;
+    font-weight: bold;
+}
+/*----------------------*/
+section.contenido-PC{
+    margin: 2em;
+    margin-top: 0;
+}
+
+section.contenido-PC article.resultados{
+    font-size: 1em;
+}
+
+section.contenido-PC form{
+    display: flex;
+    justify-content: flex-end;
+}
+
+article.productos a{
+    text-decoration: none;
+    color: black;
+}
+
+section.gridJP{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 30% 30% 30%;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.keyjuegos{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 30% 30% 30%;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.productos article{
+    border-right: 2px solid #c2c2c2;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+article.productos article h3{
+    font-size: 1em;
+}
+
+article.productos article img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+article.productos article li,
+article.productos article p{
+    display: block;
+    margin: auto;
+    color: #808080;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+article.productos article.super-PC,
+article.productos article.PS4,
+article.productos article.cod{
+    border: none;
+}
+
+/* Stock */
+main.contenido-stock{
+    margin: 2em;
+}
+
+
+
+/*BOTON EDITOR
+-----------------------*/
+main.contenido-stock div{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3em;
+    float: right;
+}
+
+main.contenido-stock div a img{
+    width: 2em;
+}
+
+main.contenido-stock a{
+    text-decoration: none;
+    padding: 1em;
+    font-weight: bold;
+}
+/*----------------------*/
+
+main.contenido-stock h3, main.contenido-stock h2{
+    text-decoration: underline;
+}
+
+main.contenido-stock section{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    grid-template-columns: 30% 30% 30%;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.contenido-stock article img{
+    height: 8em;
+    display: block;
+    margin: auto;
+}
+
+main.contenido-stock article p{
+    height: 8em;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+main.contenido-stock article{
+    border-right: 2px solid #c2c2c2;
+    padding-left: 5em;
+    padding-right: 5em;
+    width: 100%;
+}
+
+main.contenido-stock article.border-none{
+    border: none;
+}
+
+/* Estadisticas */
+main.contenido-estadisticas{
+    margin: 2em;
+}
+
+main.contenido-estadisticas section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.contenido-estadisticas div p.nombres{
+    float: right;
+    margin-right: 5em;
+}
+
+main.contenido-estadisticas section.rendimiento img{
+    height: 12em;
+    display: block;
+    margin: auto;
+}
+
+main.contenido-estadisticas section.rendimiento article{
+    padding-left: 5em;
+    text-align: center;
+}
+
+div.cantidaddinero{
+    border: 3px solid grey;
+    margin: 2em;
+    padding: 2em;
+}
+
+/* Pedidos */
+table.tresultados{
+    width: 100%
+}
+
+main.contenido-stock section.pedido{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+}
+
+main.contenido-pedidos{
+    margin: 3em;
+}
+
+main.contenido-pedidos section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+main.contenido-pedidos article.border{
+    border-right: #808080 solid 2px;
+    padding-right: 2em;
+}
+
+main.contenido-pedidos p#color-secundario{
+    margin: auto;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+main.contenido-pedidos article.pedid{
+    display: block;
+    margin: auto;
+    color: #808080;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+main.contenido-pedidos li{
+    list-style: none;
+}
+
+main.contenido-pedidos img.read{
+    height: 8em;
+    display: block;
+    margin: auto;
+    float: left;
+}
+
+img.estrellas{
+    height: 34px;
+}
+
+img.ordenador01{
+    width: 300px;
+}
+
+img.imagenRDD2{
+    height: 200px;
+}
+
+article.articuloRDD2{   
+    padding-left: 2em;
+}
+
+a.generarfactura{
+    background-color: #f34d0b;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    border: solid black 2px;
+    font-weight: bold;
+}
+
+
+/*Páginas d dentro de las características*/
+
+/*XBOX*/
+article.XBOX a.compartir{
+    background-color: #f34d0b;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+img.XBOX{
+    height: 500px;
+}
+
+div.div1{
+    text-align: center;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 50% 50%;
+}
+
+div.separado{
+    padding-left: 50px;
+}
+
+article.caracteristicas{
+    padding: 20px;
+    margin: 20px;
+}
+
+article.opiniones{
+    margin: 30px;
+    padding: 30px;
+    border: 3px solid grey;
+}
+
+/*PC*/
+article.PC a.compartir{
+    background-color: #f34d0b;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+}
+
+img.PC{
+    height: 500px;
+}
+
+div.div2{
+    text-align: center;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 50% 50%;
+}
+
+div.separado{
+    padding-left: 50px;
+}
+
+article.caracteristicas{
+    padding: 20px;
+    margin: 20px;
+}
+
+article.opiniones{
+    margin: 30px;
+    padding: 30px;
+    border: 3px solid grey;
+}
+
+/* BASES DE DATOS */
+/*table.tresultados{
+    border: 3px solid #2c3840;
+}*/
+table.enviar{
+    margin-bottom: 5em;
+}
+
+table.tresultados th{
+    border: 2px solid #2c3840;
+    background-color: #e91e63;
+    padding: 5px;
+}
+
+table.tresultados td{
+    border: 2px solid #2c3840;
+    background-color: #f34d0b;
+    padding: 5px;
+}
+
+/*Version móvil*/
+@media screen and (max-width: 1300px){
+
+    section.carrito{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 90%;        
+        margin: auto;
+        width: 90%;
+    }
+
+    section.pagina-principal article div p{
+        font-size: 50px;
+    }
+
+    section.pagina-principal article div ul li{
+        margin: 10px;
+    }
+
+    /*PC*/
+    section.gridJP{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 90%;
+    }
+
+    header.cabecera-PC a{
+        background-color: #f34d0b;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em;
+        border: solid black 2px;
+        font-weight: bold;
+        font-size: 1.5ch;
+    }
+
+    /*Consolas*/
+    section.consolasXBOX{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 90%;
+    }
+
+    
+}
+
+/*Medias*/
+
+@media screen and (max-width: 1750px){
+
+    section.facturas{
+        /*display: grid;*/
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 90%;
+    }
+
+    section.facturas article{
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+
+    section.contacto{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    /*PEDIDOS*/
+    main.contenido-pedidos section{
+        display: block;
+        width: 100%;
+    }
+
+    /*CONTACTO*/
+    textarea#mensaje{
+        resize: horizontal;
+        max-width: 350px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1100px){
+    section.nuestra_tienda{
+        grid-template-columns: 100%;
+    }
+    
+    section.nuestra_tienda article img{
+        height: 300px;
+    }
+
+    section.carrito{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 90%; 
+        margin: auto;
+        width: 90%;
+    }
+
+    section.facturas{
+        /*display: grid;*/
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+    }
+
+    section.facturas article{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main.factura-footer header{
+        margin-top: 6em;
+        margin-bottom: 2em;
+    }
+
+    section.facturas table{
+        margin-left: 2em;
+    }
+
+    section.facturas a{
+        display: inline;
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    table.tresultados td{
+        padding: 10px;
+    }
+
+    div.div1{
+        display: block;
+    }
+
+    div.div2{
+        display: block;
+    }
+
+    /*Consolas*/
+    section.consolasXBOX{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+    }
+
+    /*STOCK*/
+    main.contenido-stock section{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 90%;
+    }
+    
+    main.contenido-stock article{
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+
+    /*INICIO*/
+
+    section.pagina-principal article div p{
+        font-size: 30px;
+    }
+
+    section.pagina-principal article div ul li{
+        margin: 10px;
+    }
+
+        
+    article.opciones ul{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 30% 30% 30%;
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    article.opciones ul li{
+        size: 25%
+    }
+    
+}
+
+@media screen and (max-width: 1500px){
+    /*KEYS videojuegos*/
+    section.keyjuegos{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 90%;
+    }
+
+    
+    /*Estadisticas*/
+    main.contenido-estadisticas section{
+        display: block;
+    }
+
+    /* INICIO */
+    
+    article.opciones ul{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 50% 50%;
+        margin: auto;
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px){
+    /*KEYS videojuegos*/
+    section.keyjuegos{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+    }
+
+    article.productos section article{
+        border: none;
+        border-bottom: #2c3840 solid 2px;
+        padding-bottom: 2em;
+    }
+
+    /* PEDIDOS */
+    main.contenido-pedidos section article.border{
+        border: none;
+    }
+}
+
+    
+
+@media screen and (max-width: 600px){
+
+
+    section.factura article div div{
+        display: none;
+    }
+
+    img.factura_producto_horizontal{
+        height: 200px;
+    }
+    
+    img.factura_producto_vertical{
+        height: 100px;
+    }
+
+    /*PC*/
+
+    section.gridJP{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+    }
+
+    article.productos section article{
+        border: none;
+        border-bottom: #2c3840 solid 2px;
+    }
+
+    main.contenido-stock section article{
+        border: none;
+    }
+
+    /* INICIO */
+    article.opciones ul{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+    }
+
+    /*STOCK*/
+    main.contenido-stock section{
+        display: grid;
+        grid-auto-flow: row;
+        grid-row-gap: 20px;
+        grid-template-columns: 100%;
+        margin: auto;
+        width: 90%;
+    }
+
+    /*PEDIDOS*/
+    main.contenido-pedidos section{
+        display: block;
+        width: 100%;
+    }
+
+    main.contenido-pedidos section article.border{
+        border: none;
+    }
+
+
+    /*INICIO*/
+    
+    section.pagina-principal article div p{
+        font-size: 20px;
+    }
+
+    section.pagina-principal article div ul li{
+        margin: 10px;
+    }
+
+    article.opciones p a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #f34d0b;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /*CARRITO*/
+    a.comprarproductos{
+        text-decoration: none;
+        background-color: grey;
+        color: white;
+        padding: 0.5em;
+        font-size: 7px;
+    }
+
+    /* FACTURAS */
+
+    section.facturas table{
+        font-size: 2px;
+    }
+
+    section.facturas a{
+        font-size: 2px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    /* BARRA */
+
+    #chk_menu,
+    #chk_dropdown {
+        display: none;
+    }
+
+    header.headerColor nav.textoColor ul.redes{
+        display: none;
+    }
+
+    header.headerColor nav.textoColor{
+        justify-content:space-between;
+    }
+
+    /*header.headerColor nav.menu-contenedor{
+        display: none;
+    }*/
+
+       /*nav.menu-contenedor {*/
+        header.headerColor{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            /*height: 3rem;*/
+            justify-content: flex-end;
+            background-color: #333;
+            z-index: 100;
+        }
+    .headerColor + header, .headerColor + section{
+        margin-top: 5rem;
+    }
+    nav.textoColor{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 1000;
+    }
+
+    .fa {
+        display: block !important;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float: right;
+        font-size: 5em;
+    }
+
+    .fa:hover{
+        color: #f34d0b;
+    }
+
+    nav.menu-contenedor ul.menu-main {
+        top: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+        left: -200%;
+        position: absolute;
+        background-color: darkslategrey;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transition: 1s all;
+    }
+
+    ul.menu-main{
+        flex-direction: column;
+        justify-content: flex-start !important;
+	position: fixed;
+	max_width: 100%;
+    }
+
+    ul.menu-main ul{
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    ul.menu-main li{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    nav.menu-contenedor li a,
+    .dropbtn {
+        display: block;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-bottom: 2px solid rgba(255, 255, 255, .25)
+    }
+
+    .dropdown-content {
+        all: unset;
+        text-align: center;
+        color: white;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    #chk_dropdown:checked~.dropdown-content {
+        display: block;
+    }
+
+
+    #chk_dropdown:checked~.textoColor{
+        position: fixed;
+    }
+
+    .dropdown-content li a {
+        font-style: italic;
+        color: lavender;
+        font-size: 0.8em;
+    }
+
+    #chk_menu:checked~ul.menu-main {
+        left: 0;
+    }
+
+    ul.menu-main li:hover{
+        background-color: none;
+    }
+
+    ul.menu-main label{
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+    a.selectColor{
+        font-size: 0.8em;
+    }
+
+    li#productos label{
+        display: none;
+        font-size: 0.8em;
+    }
+
+    li#productos ul,
+    li#tienda ul{
+        display: inline-block;
+        margin: 0;
+    }
+
+    li#productos ul li,
+    li#tienda ul li{
+        border: none;
+        background-color: rgb(108, 197, 197);
+    }
+
+    ul.menu-main li a img{
+        width: 2em;
+        height: 2em;
+    }
+
+    ul.menu-main li:hover ul{
+        display: block;
+        position: relative !important;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+        /*---------------*/
+    ul.informacion li{
+        font-size: 0.8em;
+    }
+
+    div.sombra p{
+        margin: 0 auto;
+    }
+        /*---------------*/
+    article.opciones ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    article.opciones ul img{
+        width: 6em;
+    }
+        /*---------------*/
+    article.productos img,
+    img.imagenRDD2{
+        width: 100%;
+    }
+        /*---------------*/
+    main.contenido-stock article,
+    section.rendimiento article{
+        padding: 0 !important;
+    }
+        /*---------------*/
+    img.monitoreo{
+        width: 100%;
+    }
+
+    /*FACTURAS*/
+    h1.facturas, h1.carrito{
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    section.facturas{
+        margin: 0;
+    }
+
+    section.facturas h1,
+    section.carrito h1{
+        font-size: 10px !important;
+        text-align: center;
+    }
+
+    section.facturas p{
+        font-size: 10px;
+    }
+
+    section.facturas a{
+        width: 100%;
+        margin: 0;
+    }
+
+    div.separacion p,
+    div.contenido_producto p{
+        font-size: 10px;
+    }
+    /*CARRITO*/
+    section.seccion_compras div{
+        width: 50%;
+    }
+
+    /*BASES DE DATOS*/
+    main.bases table{
+        font-size: 10px;
+    }
+
+    main.bases table.tresultados{
+        font-size: 7px;
+        font-weight: bold;
+    }
+
+    /* FACTURAS */
+
+    section.facturas table{
+        font-size: 10px;
+    }
+
+    section.facturas a{
+        font-size: 10px;
+    }
+
+}
+

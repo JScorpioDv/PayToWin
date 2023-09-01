@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pedidos</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<main>
+		<!--Cabecera de la página web:-->
+		
+		<!-- Barra de navegación de la página web:-->
+		<header class="headerColor" >
+			<nav class="textoColor">
+				<ul class="informacion">
+					<li>C\Padre Manjon, 21</li>
+					<li>+34 645 85 12 25</li>
+					<li>paytowin@gmail.com</li>
+				</ul>
+				<ul class="redes">
+					<li>
+						<a href="https://www.facebook.com" target="blank"><img src="../img/facebook.png" height="35" /></a>
+					</li>
+					<li>
+						<a href="https://www.twitter.com"target="blank"><img src="../img/twitter.jpg" height="40" /></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com"target="blank"><img src="../img/linkedin.jpg" height="40"></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/juanpa.s.a/"target="blank"><img src="../img/instagram.png" height="55"></a>
+					</li>
+				</ul>
+				<label for="chk_menu"><i class="fa fa-bars"></i></label>
+			</nav>
+
+
+			
+			<nav class="menu-contenedor">
+				<h3 class="textoColor">PAY TO WIN</h3>
+				<input type="checkbox" id="chk_menu"/>
+				<ul class="menu-main">
+					<li class="menu-inicio"id="inicio"><a href="./index.html" class="selectColor">Inicio</a></li>
+					<li class="dropdown" id="productos">
+						<label for="chk_dropdown" class="dropbtn">Productos</label>
+						<ul class="dropdown-content">
+							<li id="PC"><a href="./PC.html" class="selectColor">PC</a></li>
+							<li id="consolas"><a href="./productos.html" class="selectColor">Consolas</a></li>
+							<li id="videojuegos"><a href="./videojuegos.html" class="selectColor">Videojuegos</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown" id="tienda">
+						<label for="chk_dropdown" class="dropbtn"><a href="./nuestra_tienda.html">Nuestra Tienda</a></label>
+						<ul class="dropdown-content">
+							<li id="contacto"><a href="./contacto.html" class="selectColor">Contacto</a></li>
+							<li id="stock"><a href="./stock.html" class="selectColor">Stock</a></li>
+							<li id="estadisticas"><a href="./estadisticas.html" class="selectColor">Estadísticas</a></li>
+						</ul>
+					</li>
+
+					<li class="menu-pedidos"id="pedidos"><a href="./pedidos.html" class="selectColor">Pedidos</h3></a></li>
+				
+					<li class="menu-facturas"id="facturas"><a href="./facturas.html" class="selectColor">Facturas</h3></a></li>
+			
+					<li class="menu-carrito"id="carrito" class="selectColor"><a href="./carrito.html" class="selectColor"><img src="../img/carrito.png" height="40"></a></li>
+
+					<li class="sesion" id="sesion" class="selectColor"><a href="./access2.html" class="selectColor"><img src="../img/sesion.png" height="35"></a></li>
+				</ul>
+				
+			</nav>
+		</header>
+		<!--___________________________________________________________________________________________________________________________________________-->
+
+		<!--Información principal de la página web:-->
+
+		<main class="contenido-pedidos" id="footerCorto">
+			<h2>PEDIDOS REALIZADOS</h2>
+			<section class="pedido">
+				<table class="tresultados">
+					<tr>
+						<th>Código</th>
+						<th>Cliente</th>
+						<th>Fecha</th>
+						<th>Metodo Pago</th>
+						<th>Dirección y Facturar</th>
+					</tr>
+                                       
+					<tr>
+						<td><p>1</p></td>
+						<td><p>LaVillenera</p></td>
+						<td><p>01/02/2023</p></td>
+						<td><p>Paypal</p></td>
+
+						<td>
+							<form name="facturar" method="post" action="Facturar">
+								<input name="id" type="hidden" value="1" />
+								<select name="direccion">
+										<option>C\Maximiliano</option>
+										<option>Avenida Madrid</option>
+										<option>Nou De Octubre</option>
+								</select>
+								<input class="facturasaPDF" type="submit" value="Facturar"></input>
+							</form>
+						</td>
+					</tr>
+                                        
+					<tr>
+						<td>P-002</td>
+						<td>alex</td>
+						<td>25/03/2019</td>
+						<td>PayPal</td>
+						<td>
+							<form name="facturar" method="post" action="Facturar">
+								<input name="id" type="hidden" value="1" />
+								<select name="direccion">
+										<option>C\Maximiliano</option>
+										<option>Avenida Madrid</option>
+										<option>Nou De Octubre</option>
+								</select>
+								<input class="facturasaPDF" type="submit" value="Facturar"></input>
+							</form>
+						</td>
+					</tr>
+					<tr>
+						<td>P-003</td>
+						<td>jp</td>
+						<td>25//04/2018</td>
+						<td>PayPal</td>
+						<td>
+							<form name="facturar" method="post" action="Facturar">
+								<input name="id" type="hidden" value="1" />
+								<select name="direccion">
+										<option>C\Maximiliano</option>
+										<option>Avenida Madrid</option>
+										<option>Nou De Octubre</option>
+								</select>
+								<input class="facturasaPDF" type="submit" value="Facturar"></input>
+							</form>
+						</td>
+					</tr>
+                                      
+				</table>
+			</section>
+		</main>
+        
+
+		<!--___________________________________________________________________________________________________________________________________________-->
+
+		<!--Institucional de la página web:-->
+		<footer class="fondofooter" >
+			<p><center class="textoColor"><small>Copyright &copy; 2021 PAY TO WIN - All rights reserved</small></center></p>
+		</footer>
+	</main>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de Productos</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<main class="anyadir-producto">
+		<!--Cabecera de la página web:-->
+		
+		<!-- Barra de navegación de la página web:-->
+		<header class="headerColor" >
+			<nav class="textoColor">
+				<ul class="informacion">
+					<li>C\Padre Manjon, 21</li>
+					<li>+34 645 85 12 25</li>
+					<li>paytowin@gmail.com</li>
+				</ul>
+				<ul class="redes">
+					<li>
+						<a href="https://www.facebook.com" target="blank"><img src="../img/facebook.png" height="35" /></a>
+					</li>
+					<li>
+						<a href="https://www.twitter.com"target="blank"><img src="../img/twitter.jpg" height="40" /></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com"target="blank"><img src="../img/linkedin.jpg" height="40"></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/juanpa.s.a/"target="blank"><img src="../img/instagram.png" height="55"></a>
+					</li>
+				</ul>
+				<label for="chk_menu"><i class="fa fa-bars"></i></label>
+			</nav>
+
+
+			
+			<nav class="menu-contenedor">
+				<h3 class="textoColor">PAY TO WIN</h3>
+				<input type="checkbox" id="chk_menu"/>
+				<ul class="menu-main">
+					<li class="menu-inicio"id="inicio"><a href="./index.html" class="selectColor">Inicio</a></li>
+					<li class="dropdown" id="productos">
+						<label for="chk_dropdown" class="dropbtn">Productos</label>
+						<ul class="dropdown-content">
+							<li id="PC"><a href="./PC.html" class="selectColor">PC</a></li>
+							<li id="consolas"><a href="./productos.html" class="selectColor">Consolas</a></li>
+							<li id="videojuegos"><a href="./videojuegos.html" class="selectColor">Videojuegos</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown" id="tienda">
+						<label for="chk_dropdown" class="dropbtn"><a href="./nuestra_tienda.html">Nuestra Tienda</a></label>
+						<ul class="dropdown-content">
+							<li id="contacto"><a href="./contacto.html" class="selectColor">Contacto</a></li>
+							<li id="stock"><a href="./stock.html" class="selectColor">Stock</a></li>
+							<li id="estadisticas"><a href="./estadisticas.html" class="selectColor">Estadísticas</a></li>
+						</ul>
+					</li>
+
+					<li class="menu-pedidos"id="pedidos"><a href="./pedidos.html" class="selectColor">Pedidos</h3></a></li>
+				
+					<li class="menu-facturas"id="facturas"><a href="./facturas.html" class="selectColor">Facturas</h3></a></li>
+			
+					<li class="menu-carrito"id="carrito" class="selectColor"><a href="./carrito.html" class="selectColor"><img src="../img/carrito.png" height="40"></a></li>
+
+					<li class="sesion" id="sesion" class="selectColor"><a href="./access2.html" class="selectColor"><img src="../img/sesion.png" height="35"></a></li>
+				</ul>
+				
+			</nav>
+		</header>
+		<!--___________________________________________________________________________________________________________________________________________-->
+
+		<!--Información principal de la página web:-->
+
+
+		<h2>Formulario de Productos</h2>
+
+            <form class="loginBox" action="AltaProducto" method="get">
+                <h2>Datos Productos</h2>
+                <div class="fbody">
+                    <div class="usuarioBox">
+                        <input type="text" name="nom-producto" id="nom-producto" required="required">
+                        <label for="nom-producto">Nombre</label>
+
+                    </div>
+
+                    <div class="usuarioBox">
+                        <input type="number" name="precio" id="precio" required="required">
+                        <label for="precio">Precio Venta</label>
+
+                    </div>
+
+                    <div class="usuarioBox">
+                        <input type="number" name="stockMinimo" id="stockMinimo" required="required">
+                        <label for="stockMinimo">Stock Minimo</label>
+                    </div>
+
+                    <div class="usuarioBox">
+                        <input type="number" name="stock" id="stock" required="required">
+                        <label for="stock">Stock</label>
+                    </div>
+
+                    <div class="usuarioBox">
+                        <input type="file" name="foto-producto" id="foto-producto" required="required">
+                        <label class="alta-foto" for="foto-producto">Foto</label>
+                    </div>
+
+                    <div class="usuarioBox">
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+                        <label class="alta-descripcion" for="descripcion">Descripcion</label>
+                    </div>
+                </div>
+
+
+                <input class="form-boton" type="submit" value="Enviar" />&nbsp;&nbsp;
+                <input class="form-boton" type="reset" value="Esborrar" />
+
+            </form>
+		<!--___________________________________________________________________________________________________________________________________________-->
+
+		<!--Institucional de la página web:-->
+		<footer class="fondofooter" >
+			<p><span class="textoColor"><small>Copyright &copy; 2021 PAY TO WIN - All rights reserved</small></span></p>
+		</footer>
+	</main>
+</body>
+</html>
